@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('nctk_category', function (Blueprint $table) {
+        Schema::create('tdk_category', function (Blueprint $table) {
             $table->id();
             $table->string('name',1000);
             $table->string('slug',1500);
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('nctk_category');
+        Schema::dropIfExists('tdk_category');
     }
 };

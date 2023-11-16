@@ -40,7 +40,7 @@
                 <div class="header-main  d-md-block d-none container ">
                     <div class="header-inner  d-flex  justify-content-between align-items-center">
                         <div class="logo mr-5">
-                            <img src="{{ asset('images/logo_web2.jpg') }}" alt="logo_web.jpg">
+                            <img src="{{ asset('images/user/logo1.png') }}" alt="logo_web.jpg">
                         </div>
                         <div class="search align-self-center mr-3 ">
                             <form class="search-form" action="">
@@ -95,9 +95,8 @@
                                 @else
                                 <li class="infor-item heart-icon-box heart-far">
                                     <a href="{{ route('temp.wishlist') }}">
-                                        Yêu thích<i class="fa-solid fa-heart fs-2">
-
-                                        </i>
+                                        <i class="fas fa-star fs-1"></i> <!-- Thay thế biểu tượng heart bằng biểu tượng khác -->
+                                        Yêu thích
                                         <span class="badge fa-bounce" id="badge"></span>
                                     </a>
                                     <ul class="heart-sub">
@@ -105,35 +104,32 @@
                                             <a href="{{ route('temp.wishlist') }}">Xem Yêu Thích</a>
                                         </li>
                                         <li>
-                                            <div id="row_wishlist">
-
-                                            </div>
+                                            <div id="row_wishlist"></div>
                                         </li>
-
                                     </ul>
                                 </li>
                                 <li class="infor-item heart-far">
                                     <a href="{{ route('site.cart') }}">
-                                        Giỏ hàng<i class="fa-solid fa-cart-shopping fs-3 me-1">
-                                        </i>
+                                        <i class="fas fa-shopping-cart fs-2 me-1"></i> <!-- Thay thế biểu tượng cart bằng biểu tượng khác -->
+                                        Giỏ hàng
                                     </a>
-
                                 </li>
                                 <li class="infor-item heart-far">
-                                <a href="" data-bs-toggle="modal" data-bs-target="#myModal">
-                                    Đăng nhập/Đăng ký
-                                </a>
-                                <input type="hidden" id="get_user_ls" value="_temporary">
-                                <div class="modal fade" id="myModal">
-                                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                @includeIf('frontend.modal-login')
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#myModal">
+                                        <i class="fas fa-user-circle fs-2"></i> <!-- Thay thế biểu tượng user bằng biểu tượng khác -->
+                                        Đăng nhập/Đăng ký
+                                    </a>
+                                    <input type="hidden" id="get_user_ls" value="_temporary">
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    @includeIf('frontend.modal-login')
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
+                                </li>
                                 @endif
                                 
 
@@ -151,7 +147,7 @@
                 <div class="header-main  d-md-block d-none">
                     <div class="header-inner d-flex  justify-content-between align-items-center">
                         <div class="logo ">
-                            <img src="{{ asset('images/logo_web2.jpg') }}" alt="logo_web.jpg">
+                            <img src="{{ asset('images/user/logo1.png') }}" alt="logo_web.jpg">
                         </div>
                         <div class="search align-self-center ">
                             <form class="search-form">

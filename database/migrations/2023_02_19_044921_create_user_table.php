@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('nctk_user', function (Blueprint $table) {
+        Schema::create('tdk_user', function (Blueprint $table) {
             $table->id();
             $table->string('name',100);
             $table->string('username',100);
@@ -33,6 +33,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('nctk_user');
+        Schema::dropIfExists('tdk_user');
     }
 };

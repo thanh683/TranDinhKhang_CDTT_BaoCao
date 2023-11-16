@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('nctk_menu', function (Blueprint $table) {
+        Schema::create('tdk_menu', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('link');
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('nctk_menu');
+        Schema::dropIfExists('tdk_menu');
     }
 };

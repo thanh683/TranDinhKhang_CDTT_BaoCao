@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('nctk_order', function (Blueprint $table) {
+        Schema::create('tdk_order', function (Blueprint $table) {
             $table->id();
             $table->unsignedInteger('user_id');
             $table->string('name');
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('nctk_order');
+        Schema::dropIfExists('tdk_order');
     }
 };

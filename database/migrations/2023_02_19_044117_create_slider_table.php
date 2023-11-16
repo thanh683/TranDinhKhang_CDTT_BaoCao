@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('nctk_slider', function (Blueprint $table) {
+        Schema::create('tdk_slider', function (Blueprint $table) {
             $table->id();
             $table->string('name',1000);
             $table->string('link',1000);
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('nctk_slider');
+        Schema::dropIfExists('tdk_slider');
     }
 };

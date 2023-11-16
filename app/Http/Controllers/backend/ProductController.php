@@ -300,6 +300,8 @@ class ProductController extends Controller
                 $product_sale->price_sale = $request->price_sale;
                 $product_sale->date_begin = $request->date_begin;
                 $product_sale->date_end = $request->date_end;
+            } else {
+                $product_sale->price_sale = $product->price;
             }
             $product->sale()->save($product_sale);
             if ($request->hasFile('images')) {
